@@ -24,7 +24,7 @@ const EducationSection = () => {
       description: language === 'en'
         ? "Focused on natural sciences including Mathematics, Physics, Chemistry, and Biology."
         : "Fokus pada ilmu pengetahuan alam termasuk Matematika, Fisika, Kimia, dan Biologi.",
-      logo: "https://images.pexels.com/photos/5905445/pexels-photo-5905445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      logo: "https://i.imgur.com/9I4O6gP.jpeg"
     }
   ];
 
