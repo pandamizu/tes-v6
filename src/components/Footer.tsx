@@ -15,6 +15,7 @@ const Footer = () => {
     { name: t.nav.home, path: '/' },
     { name: t.nav.portfolio, path: '/portfolio' },
     { name: t.nav.cv, path: '/cv' },
+    { name: t.nav.services, path: '/services' },
     { name: t.nav.contact, path: '/contact' }
   ];
 
@@ -132,21 +133,13 @@ const Footer = () => {
 
         {/* Footer bottom */}
         <div className="border-t border-gray-800 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-center">
             <p className="text-gray-400 text-sm">
               &copy; {new Date().getFullYear()} Pandu Tirta Buana. 
               {language === 'en' 
                 ? ' All rights reserved.'
                 : ' Hak cipta dilindungi.'}
             </p>
-            <div className="flex space-x-4 text-sm text-gray-400">
-              <Link to="/privacy" className="hover:text-white transition-colors duration-200">
-                {language === 'en' ? 'Privacy Policy' : 'Kebijakan Privasi'}
-              </Link>
-              <Link to="/terms" className="hover:text-white transition-colors duration-200">
-                {language === 'en' ? 'Terms of Service' : 'Ketentuan Layanan'}
-              </Link>
-            </div>
           </div>
         </div>
       </div>

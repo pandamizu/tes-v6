@@ -28,6 +28,7 @@ const Layout = () => {
     { name: translations[language].nav.home, path: '/' },
     { name: translations[language].nav.portfolio, path: '/portfolio' },
     { name: translations[language].nav.cv, path: '/cv' },
+    { name: translations[language].nav.services, path: '/services' },
     { name: translations[language].nav.contact, path: '/contact' },
   ];
 
@@ -124,4 +125,4 @@ const Layout = () => {
   );
 };
 
-export default Layout
+export default Layout;

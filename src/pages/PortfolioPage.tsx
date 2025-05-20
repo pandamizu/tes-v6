@@ -3,10 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Instagram, Youtube, Box, ExternalLink } from 'lucide-react';
 
 const PortfolioPage = () => {
-  // State for active category filter
   const [activeCategory, setActiveCategory] = useState('all');
 
-  // Category options for filtering
   const categories = [
     { id: 'all', name: 'All Work', icon: <Box className="w-4 h-4" /> },
     { id: 'design', name: 'Design Works', icon: <Instagram className="w-4 h-4" /> },
@@ -195,6 +193,36 @@ const designWorks = [
     title: "UI/UX Design",
     description: "Mobile app interface with intuitive navigation",
     image: "https://i.imgur.com/2MLH0il.jpeg"
+  },
+  {
+    title: "Food Packaging Design",
+    description: "Creative packaging design for artisanal food products",
+    image: "https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg"
+  },
+  {
+    title: "Event Poster Design",
+    description: "Eye-catching poster for music festival",
+    image: "https://images.pexels.com/photos/1293120/pexels-photo-1293120.jpeg"
+  },
+  {
+    title: "Corporate Branding",
+    description: "Complete brand identity package for tech startup",
+    image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg"
+  },
+  {
+    title: "Magazine Cover",
+    description: "Contemporary magazine cover design",
+    image: "https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg"
+  },
+  {
+    title: "Web Design",
+    description: "Modern e-commerce website design",
+    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
+  },
+  {
+    title: "Social Media Kit",
+    description: "Cohesive social media template design",
+    image: "https://images.pexels.com/photos/5082566/pexels-photo-5082566.jpeg"
   }
 ];
 
@@ -239,6 +267,24 @@ const productWorks = [
     description: "Sustainable product packaging design",
     image: "https://i.imgur.com/OKn8jFu.png",
     tools: ["Blender", "Cycles", "Product"]
+  },
+  {
+    title: "Gaming Console",
+    description: "Futuristic gaming device concept",
+    image: "https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg",
+    tools: ["Blender", "Cycles", "Electronics"]
+  },
+  {
+    title: "Luxury Headphones",
+    description: "High-end audio equipment visualization",
+    image: "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg",
+    tools: ["Blender", "Cycles", "Audio"]
+  },
+  {
+    title: "Modern Furniture",
+    description: "Contemporary furniture design showcase",
+    image: "https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg",
+    tools: ["Blender", "Cycles", "Interior"]
   }
 ];
 
