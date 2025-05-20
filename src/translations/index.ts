@@ -4,6 +4,7 @@ export const translations = {
       home: 'Home',
       portfolio: 'Portfolio',
       cv: 'CV',
+      services: 'Services',
       contact: 'Contact'
     },
     home: {
@@ -60,6 +61,7 @@ export const translations = {
       home: 'Beranda',
       portfolio: 'Portofolio',
       cv: 'CV',
+      services: 'Layanan',
       contact: 'Kontak'
     },
     home: {
