@@ -16,7 +16,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen pt-12">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
       {/* Hero Section with improved background */}
       <div className="relative h-[60vh] flex items-center overflow-hidden">
         {/* Animated gradient background */}
@@ -44,7 +44,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="section-container py-20 -mt-2 bg-gradient-to-b from-gray-900 to-gray-800">
+      <div className="section-container py-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
