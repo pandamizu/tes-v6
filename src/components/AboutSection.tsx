@@ -121,8 +121,8 @@ const AboutSection = () => {
               { name: "Canva", src: "https://upload.wikimedia.org/wikipedia/he/5/56/Canva-logo.png" },
               { name: "MS Office", src: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg" },
               { name: "CapCut", src: "https://cdn.prod.website-files.com/64ea57571d50b02423c4505d/64fb219ade937671b42e011e_capcut%20logo%20png.png" },
-              { name: language === 'en' ? "AI Tools" : "Alat AI", src: "https://i.imgur.com/E6NHQPb.png" },
-              { name: "Filmora", src: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Wondershare_filmora_logo.svg" }
+              { name: "Filmora", src: "https://i.imgur.com/UojugHh.png" },
+              { name: language === 'en' ? "AI Tools" : "Alat AI", src: "https://i.imgur.com/E6NHQPb.png" }
             ].map((tool, index) => (
               <motion.div
                 key={tool.name}
