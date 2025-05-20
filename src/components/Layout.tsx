@@ -24,11 +24,25 @@ const Layout = () => {
     window.scrollTo(0, 0);
   }, [location]);
 
+  const handleServicesClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      window.location.href = '/#services';
+    } else {
+      const servicesSection = document.getElementById('services');
+      servicesSection?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navLinks = [
     { name: translations[language].nav.home, path: '/' },
     { name: translations[language].nav.portfolio, path: '/portfolio' },
     { name: translations[language].nav.cv, path: '/cv' },
-    { name: translations[language].nav.services, path: '/services' },
+    { 
+      name: translations[language].nav.services, 
+      path: '/#services',
+      onClick: handleServicesClick 
+    },
     { name: translations[language].nav.contact, path: '/contact' },
   ];
 
@@ -54,15 +68,16 @@ const Layout = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               {navLinks.map((link) => (
-                <NavLink 
+                <Link 
                   key={link.name} 
                   to={link.path}
+                  onClick={link.onClick}
                   className={({ isActive }) => 
                     isActive ? 'nav-link-active' : 'nav-link'
                   }
                 >
                   {link.name}
-                </NavLink>
+                </Link>
               ))}
               <button
                 onClick={toggleLanguage}
@@ -92,15 +107,21 @@ const Layout = () => {
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-4 pt-2 pb-3 space-y-1">
               {navLinks.map((link) => (
-                <NavLink
+                <Link
                   key={link.name}
                   to={link.path}
+                  onClick={(e) => {
+                    if (link.onClick) {
+                      link.onClick(e);
+                    }
+                    setIsMenuOpen(false);
+                  }}
                   className={({ isActive }) =>
                     `block py-2 ${isActive ? 'text-indigo-600 font-medium' : 'text-gray-700'}`
                   }
                 >
                   {link.name}
-                </NavLink>
+                </Link>
               ))}
               <button
                 onClick={toggleLanguage}
