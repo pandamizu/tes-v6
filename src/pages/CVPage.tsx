@@ -325,14 +325,14 @@ const CVPage = () => {
               <h2 className="text-2xl font-bold mb-6">{t.technical}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
-                  { name: "Adobe Premiere Pro", level: 95 },
-                  { name: "Adobe Photoshop", level: 90 },
-                  { name: "Computer Literacy", level: 90 },
+                  { name: "Adobe Premiere Pro", level: 85 },
+                  { name: "Adobe Photoshop", level: 85 },
+                  { name: "Computer Literacy", level: 95 },
                   { name: "MS Office", level: 85 },
                   { name: "Canva", level: 85 },
-                  { name: "Capcut", level: 80 },
-                  { name: "Blender", level: 75 },
-                  { name: "Adobe Illustrator", level: 70 }
+                  { name: "Capcut", level: 85 },
+                  { name: "Blender", level: 80 },
+                  { name: "Adobe Illustrator", level: 80 }
                 ].map((skill, index) => (
                   <motion.div
                     key={skill.name}
